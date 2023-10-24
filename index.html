@@ -10,8 +10,11 @@
 </head>
 <body>
     <div class="container">
-        <div class="weather-app">
+        
     <div class="weather-app-wrapper">
+        <div class="weather-app">
+            <div class="overview">
+            </div>
     <h1>
         New York
     </h1>
@@ -25,11 +28,21 @@
     </ul>
         <div class="row">
         <div class="col-6">
-<img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear"
+             <div class="float-left">
+            <div class="d-flex weather-temperature">
+<img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" 
+alt="Clear"
+id="icon"
 />
-12°C | °F
-    </div>
+<div>
+    <strong id="temperature">12</strong>
+    <span class="units">°C | <a href="#">F°</a></span>
+</div>
+</div>
+
+    </div></div>
                     <div class="col-6">
+                      
 <ul>
 <li>
     Precpitation: 0%
@@ -41,6 +54,9 @@ Humidity: 73%
     Wind: 2 km/h
 </li>
 </ul>
+</div>
+</div>
+</div>
                     </div>
         </div>
 </div>
