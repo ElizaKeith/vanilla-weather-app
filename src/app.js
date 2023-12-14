@@ -6,9 +6,9 @@ let minuets=date.getMinutes();
 if (minuets < 10) {minuets= `0${minuets}`}
 let days= ["Sunday", "Monday","Tuesday","Wednesday","Thursday", "Friday","Saturday"]
 let day=days[date.getDay()];
-return `${day} ${hours}:${minuets}`
+return `${day} ${hours}:${minuets}`}
 
-}
+
 
 function displayTemperature(response) {
 let temperatureElement= document.querySelector("#temperature");
@@ -58,12 +58,8 @@ event.preventDefault();
  celsiusLink.classList.add("active");
     fahrenheitLink.classList.remove("active");
  temperatureElement.innerHTML=Math.round(celsiusTemperature);
-
 }
-
-
 celsiusTemperature=null;
-
 let form=document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
@@ -73,4 +69,32 @@ fahrenheitLink.addEventListener("click",displayfahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click",displaycelsiusTemperature);
 
+function displayForecast(){
+    let forecastHTML=`<div class="row">`;
+forecastHTML= forecastHTML+`</div>`;
+forecastElement.innerHTML=forecastHTML
+let forecastElement= document.querySelector("#forecast");
+let days=["Tue", "Wed", "Thu","Fri", "Sat"];
+days.forEach (function(day){
+forecast.innerHTML= `
+<div class= "weather-forecast-day">
+<div class="weather-forecast-date"> ${day} </div>
+<div class= "weather-forecast-icon"> </div>
+<div class= "weather-forecast-temperatures">
+<div class= "weather-forecast-temperature>
+ <strong> 15 </strong>
+</div>
+div class= "weather-forecast-temperature"> 9</div>
+</div>
+</div>
+`
+;
+});
+}
+;
+
+
+
+
 search("New York");
+displayForecast();
