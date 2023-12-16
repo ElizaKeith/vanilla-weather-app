@@ -28,47 +28,75 @@
             </form>
 
         </header>
-        <main>
             <div class="weather-app-data">
-                <div class="overview"> </div>
+                <div class="overview">
                 <div>
                     <h1 class="weather-app-city" id="city">Paris
                     </h1>
-                    <ul class="weather-app-details">
-                        <li id="time">
-                            "Last updated:" <span id="date">
-                        17:01 </span>
-                    </li>
-                        <li id="description">
-                            Cloudy </li>
-                        Humidity: <strong id="humidity"> 7% </strong>, Wind:4 km/hr
-                        <strong id="wind-speed"></strong>
+                    <ul>
+                        <li> Last updated:
+                            <span id="date">Thursday 20:12</span>
+                        </li>
+                
+                        <li id="description">mist</li>
                     </ul>
-
-
-
-
-
-
-                    
+                
+<div class="row">
+    <div class="col-6">
+        <div class="float-left">
+            <div class="d-flex weather-temperature">
+                <img src="https://openweathermap.org/img/wn/50n@2x.png" alt="mist" id="icon">
+                   <div>
+                <strong id="temperature">8</strong>
+                <span class="units">
+                    <a href="#" id="celsius-link" class="active">°C</a>|
+                    <a href="#" id="fahrenheit-link" class="">°F</a>
+                </span>
                 </div>
-                <div class="weather-app-temperature-container">
-                    <div id="icon"></div>
-                    <div class="weather-app-temperature" id="temperature"></div>
-                    <div class="weather-app-unit">°C</div>
-                </div>
+        </div>
+        </div>
+        </div>
+        
+    <div class="col-2">
+        <ul>
+            <li>
+                Humidity: <span id="humidity">95</span>%
+            </li>
+            <li>
+                Wind: <span id="wind">3</span> km/h
+            </li>
+        </ul>
+</div>
+</div>
+<div class="weather-forecast">
+    <div class="row">
+        <div class="col-2">
+            <div class="weather-forecast-date">
+                Thu
             </div>
-            <div class="weather-forecast" id="forecast"></div>
-        </main>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAVVJREFUaN7tmckNgzAQRV1CSqAEl+ASKIFjjpTgEiiBElICJeTKjXRAB5MZyUgOyoKNx8hkLL1LNv6D8RoFAKpklAiIgAiIgAiIwMsLGxs8rjXSI3cE3nB379cqYdstgIEsMn8I/Qn6vD1UAAMYZAoMvoa+r7ML4EWbncHXNNkEGMLvkggSYAy/ULMJ4I9XEZ0VIjp3xSVwYw6/cEsu4EYcyIhOLdBnFuhTC3DXPs3SgzeLD3TdcRw1Yj10sABz+VBgsxrpLgSG7RB4Qxcq0DKGp6AtMnsBB3e34QttiIBlEjAuPEQwhQh0HHff1fgcKQBHCtCA0GCIKja8/yToKeYsoaXuzYY6D6HL1YlpWGwSBvfR3MPo7rr/geWeyHonYJkw3EsJqxjafyzmil9On2JDU/yW8hSb+lMcq5ziYCvB0eJ0+NFiMYe78v+ACIiACIiACJTEEyDCTi8sMWUSAAAAAElFTkSuQmCC"
+                alt="" width="42">
+            <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max">
+                    18°
+                </span>
+                <span class="weather-forecast-temperature-min">
+                    12°
+                </span>
+
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
 
         <footer>
             This project was coded by Elizabeth Keith,
-            is
-            <a href="https://github.com/matthieua/meteo" target="_blank">open-sourced on GitHub</a>
-            and
-            <a href="https://meteo-shecodes-app.netlify.app/" target="_blank">hosted on Netlify</a>
-        </footer>
+             and is
+            <a href="https://github.com/ek0179/vanilla-weather-app.git" target="_blank">open-sourced on GitHub.</a>
+            </footer>
     </div>
+</div>
     </div>
 </div>
 </body>
